@@ -40,6 +40,13 @@
         android:title="@string/show_clipboard_overlay_title"
         android:summary="@string/show_clipboard_overlay_summary"
         android:defaultValue="true"/>
+
+
+        <Preference
+            android:key="smart_pixels"
+            android:title="@string/smart_pixels_title" 
+            android:summary="@string/smart_pixels_summary" 
+            android:fragment="com.base.camp.fragments.SmartPixels" />
     
     </PreferenceCategory>
 
