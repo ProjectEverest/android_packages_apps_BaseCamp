@@ -39,6 +39,13 @@
             android:title="@string/status_bar_double_tap_to_sleep_title"
             android:summary="@string/status_bar_double_tap_to_sleep_summary"
             android:defaultValue="true" />
-    </PreferenceCategory>
-
+            
+        <Preference
+            android:key="gesture_nav_custom_options"
+            android:title="@string/navbar_gesture_tweaks_pref_title"
+            android:summary="@string/navbar_gesture_tweaks_pref_summary"
+            android:fragment="com.base.camp.fragments.gestures.GestureTweaksSettings"
+            settings:allowDividerAbove="false"/>
+            
+     </PreferenceCategory>        
 </PreferenceScreen>
