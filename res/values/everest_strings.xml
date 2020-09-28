@@ -47,6 +47,7 @@
     <string name="statusbar_icons">Icons</string>
     <string name="power_category">Power Button/Menu"</string>
     <string name="volume_category">volume Button/panel"</string>
+    <string name="fingerprint_category">Fingerprint</string>
 
     <!-- Status bar Icon Manager -->
     <string name="icon_manager_title">Icon manager</string>
@@ -929,4 +930,11 @@
     <!-- Charging animation -->
     <string name="charging_animation_title">Charging animation</string>
     <string name="charging_animation_summary">Display an animation when the device is plugged in</string>
+
+    <!-- Fingerprint authentication vibration -->
+    <string name="fprint_success_vib_title">Fingerprint authentication vibration</string>
+    <string name="fprint_success_vib_summary">Vibrate on successful fingerprint authentication</string>
+    <string name="fprint_error_vib_title">Fingerprint error vibration</string>
+    <string name="fprint_error_vib_summary">Vibrate on error fingerprint authentication</string>
+
 </resources>
