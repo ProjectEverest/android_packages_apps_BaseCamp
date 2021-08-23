@@ -23,6 +23,12 @@
         android:title="@string/laboratory_ignore_window_secure_title"
         android:summary="@string/laboratory_ignore_window_secure_summary"
         android:defaultValue="false"/>
+
+    <com.everest.support.preferences.SystemSettingSwitchPreference
+        android:key="charging_animation_bg"
+        android:title="@string/charging_animation_bg_title"
+        android:summary="@string/charging_animation_bg_summary"
+        android:defaultValue="false" />
     
     </PreferenceCategory>
 
