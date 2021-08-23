@@ -314,5 +314,9 @@
     <string name="qs_tile_title">QS tile</string>
     <string name="quick_settings_vibrate_title">Vibrate on touch</string>
     <string name="quick_settings_vibrate_summary">Vibrate when touching QS tiles</string>
-
+    
+    <!-- Charging BG -->
+    <string name="system_charging">System Charging Options</string>
+    <string name="charging_animation_bg_title">Charging Background</string>
+    <string name="charging_animation_bg_summary">Enabling this option will make the background on System Animation to black</string>
 </resources>
