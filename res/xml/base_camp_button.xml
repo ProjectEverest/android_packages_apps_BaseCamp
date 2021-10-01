@@ -78,6 +78,12 @@
         android:defaultValue="0" />
 
      <com.everest.support.preferences.SystemSettingSwitchPreference
+        android:key="navigation_bar_menu_arrow_keys"
+        android:title="@string/navigation_bar_arrow_keys_title"
+        android:summary="@string/navigation_bar_arrow_keys_summary"
+        android:defaultValue="false" />
+        
+     <com.everest.support.preferences.SystemSettingSwitchPreference
         android:key="swap_volume_buttons"
         android:title="@string/swap_volume_buttons_title"
         android:summary="@string/swap_volume_buttons_summary"
