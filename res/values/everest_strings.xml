@@ -65,4 +65,10 @@
     <string name="settings_header_image_title">Settings header image</string>
     <string name="settings_header_image_random_title">Random Settings header image</string>
     <string name="settings_header_image_random_summary">Enable random aesthetic settings dashboard banner/header images</string>
+
+     <!-- Quick QS pulldown -->
+     <string name="qs_quick_pulldown">Quick QS pulldown</string>
+     <string name="quick_pulldown_none">Disabled</string>
+     <string name="quick_pulldown_right">Pulldown statusbar from right side</string>
+     <string name="quick_pulldown_left">Pulldown statusbar from left side</string>
 </resources>
