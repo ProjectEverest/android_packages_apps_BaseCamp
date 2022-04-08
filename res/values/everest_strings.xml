@@ -45,6 +45,7 @@
     <string name="general_category">General</string>
     <string name="statusbar_icons">Icons</string>
     <string name="power_category">Power Button/Menu"</string>
+    <string name="volume_category">volume Button/panel"</string>
 
     <!-- Status bar Icon Manager -->
     <string name="icon_manager_title">Icon manager</string>
@@ -296,5 +297,9 @@
     <string name="incall_vibrate_connect_title">Vibrate on connect</string>
     <string name="incall_vibrate_call_wait_title">Vibrate on call waiting</string>
     <string name="incall_vibrate_disconnect_title">Vibrate on disconnect</string>
+    
+    <!-- Volume button music control -->
+    <string name="volume_button_music_control_title">Playback control</string>
+    <string name="volume_button_music_control_summary">When the screen is off, long-pressing volume keys will skip music tracks</string>
 
 </resources>
