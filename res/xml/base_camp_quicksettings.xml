@@ -24,7 +24,16 @@
          android:summary="@string/qs_show_data_usage_summary"
          android:defaultValue="true" />
 
-    </PreferenceCategory>
+    <com.everest.support.preferences.SystemSettingSeekBarPreference
+         android:key="qs_transparency"
+         android:title="@string/qs_transparency_title"
+         android:summary="@string/qs_transparency_summary"
+         android:defaultValue="100"
+         settings:interval="1"
+         android:max="100"
+         settings:units="%"         
+         android:min="1" />
+     </PreferenceCategory>
 
      <PreferenceCategory
           android:title="@string/qs_show_brightness_slider_title">
