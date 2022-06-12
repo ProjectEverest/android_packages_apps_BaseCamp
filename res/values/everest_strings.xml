@@ -212,4 +212,8 @@
     <string name="lockscreen_albumart_filter_blur_radius_title">Album art blur level</string>
     <string name="ls_media_artwork_fade_percent_title">Album art fade level</string>
 
+     <!-- QS footer data usage -->
+     <string name="qs_show_data_usage_title">Show data usage</string>
+     <string name="qs_show_data_usage_summary">Show daily cellular/Wi-Fi data usage in QS footer</string>
+
 </resources>
