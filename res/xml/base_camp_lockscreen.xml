@@ -62,6 +62,10 @@
             android:max="80"
             settings:min="1"/>
 
-    </PreferenceCategory>
-
+          <Preference
+               android:key="pulse_settings"
+               android:fragment="com.base.camp.fragments.PulseSettings"
+               android:title="@string/pulse_settings"
+               android:summary="@string/pulse_settings_summary" />
+     </PreferenceCategory>
 </PreferenceScreen>
