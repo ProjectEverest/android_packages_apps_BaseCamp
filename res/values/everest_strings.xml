@@ -926,4 +926,8 @@
      <string name="network_traffic_autohide_title">Hide network traffic indicator if inactive</string>
      <string name="network_traffic_autohide_summary">Hide when network traffic indicator is below 1
           KB/s</string>
+
+    <!-- Charging animation -->
+    <string name="charging_animation_title">Charging animation</string>
+    <string name="charging_animation_summary">Display an animation when the device is plugged in</string>
 </resources>
