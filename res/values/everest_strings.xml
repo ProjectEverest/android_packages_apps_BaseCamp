@@ -397,6 +397,7 @@
     <string name="qs_transitions_zoom_out_slide">Zoom out slide</string>
     
     <!-- Ambient Wake gesture -->
+    <string name="ambient_display_category">Ambient display</string>
     <string name="ambient_wake_gestures_title">Ambient wake gestures</string>
     <string name="ambient_wake_gestures_summary">Show Ambient Display instead of normal locksreen on wake gestures</string>
     

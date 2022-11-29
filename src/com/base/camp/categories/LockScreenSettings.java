@@ -27,6 +27,7 @@ import android.content.res.Resources;
 import android.hardware.fingerprint.FingerprintManager;
 import android.net.Uri;
 import android.os.Bundle;
+import android.text.TextUtils;
 import androidx.preference.SwitchPreference;
 import androidx.preference.ListPreference;
 import androidx.preference.Preference;
@@ -39,6 +40,8 @@ import com.android.settings.SettingsPreferenceFragment;
 
 public class LockScreenSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
+        
+     private static final String CATEGORY_AMBIENT = "ambient_display";
 
     private static final String BLUR_RADIUS_KEY = "ls_media_filter_blur_radius";
 
@@ -53,6 +56,11 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
         Resources resources = getResources();
         final PreferenceScreen prefScreen = getPreferenceScreen();
         final PreferenceScreen prefSet = getPreferenceScreen();
+        final PreferenceCategory ambientCat = (PreferenceCategory) prefScreen.findPreference(CATEGORY_AMBIENT);
+        if (TextUtils.isEmpty(getResources().getString(com.android.internal.R.string.config_dozeDoubleTapSensorType)) &&
+                TextUtils.isEmpty(getResources().getString(com.android.internal.R.string.config_dozeTapSensorType))) {
+            prefScreen.removePreference(ambientCat);
+        }
 
         mBlurRadiusPref = (Preference) findPreference(
                         BLUR_RADIUS_KEY);
