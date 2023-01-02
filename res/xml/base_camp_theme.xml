@@ -24,6 +24,12 @@
         android:title="@string/theme_customization_font_title"
         android:summary="@string/theme_customization_font_summary"
         android:fragment="com.base.camp.fragments.FontsPicker"/>
+        
+    <Preference
+        android:key="android.theme.customization.lockscreen_clock_font"
+        android:title="@string/theme_customization_lock_clock_title"
+        android:summary="@string/theme_customization_lock_clock_summary"
+        android:fragment="com.base.camp.fragments.LockClockFonts" />
 
     <!-- Icon pack -->
     <Preference
@@ -76,5 +82,6 @@
         android:title="@string/theme_customization_navbar_title"
         android:summary="@string/theme_customization_navbar_summary"
         android:fragment="com.base.camp.fragments.NavbarStyles"/>
-</PreferenceCategory>
+
+    </PreferenceCategory>
 </PreferenceScreen>
