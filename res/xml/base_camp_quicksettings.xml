@@ -69,6 +69,12 @@
                android:summary="@string/qs_show_auto_brightness_summary"
                android:defaultValue="true" />
 
+          <com.everest.support.preferences.SystemSettingSwitchPreference
+               android:title="Brightness Percentage"
+               android:key="BRIGHTNESS_TEXTVIEW"
+               android:summary="show hide brightness percentage text"
+               android:defaultValue="false" />
+
      </PreferenceCategory>
      <PreferenceCategory
           android:title="@string/qs_tile_title">
