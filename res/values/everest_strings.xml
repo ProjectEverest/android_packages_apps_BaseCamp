@@ -849,6 +849,13 @@
     <string name="profile_choose_app">Choose app</string>
     <string name="dialog_delete_title">Delete</string>
     <string name="dialog_delete_message">Remove selected item?</string>
+    
+    <!-- Volume TextView -->
+    <string name="volume_persen_switch_title">Volume Percentage</string>
+    <string name="volume_persen_switch_summary">show volume panel percentage</string>
+    <string name="volume_persen_style_title">Percentage Location</string>
+    <string name="volume_persen_style_top">Top</string>
+    <string name="volume_persen_style_bottom">Bottom</string>
 
     <!-- Doze Double Tap -->
     <string name="doze_double_tap_title">Double tap to check phone</string>
