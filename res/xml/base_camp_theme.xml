@@ -12,7 +12,11 @@
     <PreferenceCategory
     android:title="@string/general_category">
     
-    </PreferenceCategory>
+    <PreferenceScreen
+        android:key="monet_engine"
+        android:title="@string/monet_title"
+        android:summary="@string/monet_summary"
+        android:fragment="com.base.camp.fragments.ui.MonetSettings" />
 
     <!-- Font style -->
     <Preference
@@ -72,5 +76,5 @@
         android:title="@string/theme_customization_navbar_title"
         android:summary="@string/theme_customization_navbar_summary"
         android:fragment="com.base.camp.fragments.NavbarStyles"/>
-
+</PreferenceCategory>
 </PreferenceScreen>
