@@ -107,6 +107,15 @@
             android:summary="@string/quick_settings_vibrate_summary"
             android:defaultValue="false"/>
 
+
+          <com.everest.support.preferences.SystemSettingListPreference
+                android:key="qs_ui_style"
+        	android:title="@string/qs_ui_title"
+        	android:entries="@array/qs_ui_entries"
+        	android:entryValues="@array/qs_ui_values"
+        	android:summary="%s"
+        	android:defaultValue="0" />
+
           <com.everest.support.preferences.SystemSettingSeekBarPreference
             android:key="qs_layout_columns"
             android:title="@string/qs_columns_portrait_title"
