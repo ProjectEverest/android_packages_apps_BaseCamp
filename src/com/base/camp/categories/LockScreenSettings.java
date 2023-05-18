@@ -28,6 +28,7 @@ import android.content.pm.PackageManager;
 import android.hardware.fingerprint.FingerprintManager;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.UserHandle;
 import android.text.TextUtils;
 import androidx.preference.SwitchPreference;
 import androidx.preference.ListPreference;
@@ -70,6 +71,7 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
         ContentResolver resolver = getActivity().getContentResolver();
         Resources resources = getResources();
         final PreferenceScreen prefScreen = getPreferenceScreen();
+        final Resources res = getResources();
         final PreferenceScreen prefSet = getPreferenceScreen();
         final PackageManager mPm = getActivity().getPackageManager();
         final PreferenceCategory ambientCat = (PreferenceCategory) prefScreen.findPreference(CATEGORY_AMBIENT);
@@ -138,6 +140,12 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
             return true;
         }
         return false;
+    }
+
+    public static void reset(Context mContext) {
+        ContentResolver resolver = mContext.getContentResolver();
+        Settings.Secure.putIntForUser(resolver,
+                Settings.Secure.DOZE_ON_CHARGE, 0, UserHandle.USER_CURRENT);
     }
 
     @Override
