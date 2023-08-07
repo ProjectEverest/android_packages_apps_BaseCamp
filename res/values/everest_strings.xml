@@ -60,4 +60,9 @@
      <string name="theme_customization_navbar_summary">Set custom navigation bar style</string>
      <string name="theme_customization_data_title">Data icon style</string>
      <string name="theme_customization_data_summary">Set custom data icon style</string>
+
+    <!-- Settings Header -->
+    <string name="settings_header_image_title">Settings header image</string>
+    <string name="settings_header_image_random_title">Random Settings header image</string>
+    <string name="settings_header_image_random_summary">Enable random aesthetic settings dashboard banner/header images</string>
 </resources>

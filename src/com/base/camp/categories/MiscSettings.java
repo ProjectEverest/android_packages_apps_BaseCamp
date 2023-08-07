@@ -41,9 +41,14 @@ import java.util.Arrays;
 import java.util.HashSet;
 
 import com.android.settings.SettingsPreferenceFragment;
+import com.android.internal.util.everest.systemUtils;
 
 public class MiscSettings extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
+        
+    private static final String SETTINGS_HEADER_IMAGE_RANDOM = "settings_header_image_random";
+
+    private Preference mSettingsHeaderImageRandom;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -51,11 +56,20 @@ public class MiscSettings extends SettingsPreferenceFragment implements
 
         addPreferencesFromResource(R.xml.base_camp_misc);
 
+        final PreferenceScreen prefScreen = getPreferenceScreen();
+        
+        mSettingsHeaderImageRandom = findPreference(SETTINGS_HEADER_IMAGE_RANDOM);
+        mSettingsHeaderImageRandom.setOnPreferenceChangeListener(this);
     }
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object objValue) {
-
+    	Context mContext = getActivity().getApplicationContext();
+	ContentResolver resolver = mContext.getContentResolver();
+	if (preference == mSettingsHeaderImageRandom) {
+            systemUtils.showSettingsRestartDialog(getContext());
+            return true;
+          }
         return false;
     }
 
