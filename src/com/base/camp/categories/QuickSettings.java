@@ -50,6 +50,7 @@ import java.util.Locale;
 import android.text.TextUtils;
 import android.view.View;
 
+import com.base.camp.fragments.qs.QsHeaderImageSettings;
 import com.everest.support.preferences.SystemSettingListPreference;
 import com.everest.support.preferences.SystemSettingSeekBarPreference;
 
@@ -179,8 +180,7 @@ public class QuickSettings extends SettingsPreferenceFragment implements
         ContentResolver resolver = mContext.getContentResolver();
         Settings.System.putIntForUser(resolver,
                 Settings.System.QS_PANEL_STYLE, 0, UserHandle.USER_CURRENT);
-        Settings.System.putIntForUser(resolver,
-                Settings.System.QS_HEADER_IMAGE, 0, UserHandle.USER_CURRENT);
+        QsHeaderImageSettings.reset(mContext);
     }
 
     private void updateQsStyle() {

@@ -55,13 +55,11 @@
          android:summary="%s"
          android:defaultValue="0" />
 
-    <com.everest.support.preferences.SystemSettingSeekBarPreference
+    <Preference
          android:key="qs_header_image"
          android:title="@string/qs_header_image_title"
-         android:defaultValue="0"
-         settings:interval="1"
-         android:max="36"
-         android:min="0" />
+         android:fragment="com.base.camp.fragments.qs.QsHeaderImageSettings"
+         android:summary="@string/qs_header_image_summary" />
 
     <com.everest.support.preferences.SystemSettingSeekBarPreference
          android:key="qs_header_size"
