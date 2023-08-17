@@ -762,4 +762,7 @@
         The Island notification feature, inspired by iOS\'s Dynamic Island, transforms Android\'s heads-up notifications into quick-access and compact notification utility.\n\nIsland Quick Access Controls includes the following features:\n1. Tap island notification to quick answer phone calls.\n2. Long press island notification to reject phone calls.\n3. Long press island notification to expand the island notification preview.
     </string>
 
+    <!-- QS Header -->
+    <string name="qs_header_image_title">Header image</string>
+    
 </resources>

@@ -179,6 +179,8 @@ public class QuickSettings extends SettingsPreferenceFragment implements
         ContentResolver resolver = mContext.getContentResolver();
         Settings.System.putIntForUser(resolver,
                 Settings.System.QS_PANEL_STYLE, 0, UserHandle.USER_CURRENT);
+        Settings.System.putIntForUser(resolver,
+                Settings.System.QS_HEADER_IMAGE, 0, UserHandle.USER_CURRENT);
     }
 
     private void updateQsStyle() {
