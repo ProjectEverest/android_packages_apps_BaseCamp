@@ -789,4 +789,7 @@
     <string name="status_bar_custom_header_offset_title">Header image offset</string>
     <string name="status_bar_custom_header_offset_summary">Adjust the image header size</string>
 
+    <!-- Volume button swap on rotate -->
+    <string name="swap_volume_buttons_title">Reorient</string>
+    <string name="swap_volume_buttons_summary">Swap volume buttons when the screen is rotated</string>
 </resources>
