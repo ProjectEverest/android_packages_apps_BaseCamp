@@ -11,6 +11,12 @@
     <PreferenceCategory
     android:title="@string/general_category">
 
+    <Preference
+        android:key="island_notification"
+        android:title="@string/island_notification_title"
+        android:summary="@string/island_notification_summary"
+        android:fragment="com.base.camp.fragments.notifications.IslandSettings" />
+         
     <!-- Heads up -->
     <Preference
         android:key="heads_up_notifications"
