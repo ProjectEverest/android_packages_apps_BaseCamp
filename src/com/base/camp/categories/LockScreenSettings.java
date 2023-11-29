@@ -40,6 +40,10 @@ import com.android.settings.SettingsPreferenceFragment;
 public class LockScreenSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
+    private static final String BLUR_RADIUS_KEY = "ls_media_filter_blur_radius";
+
+    Preference mBlurRadiusPref;
+
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
@@ -50,6 +54,18 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
         final PreferenceScreen prefScreen = getPreferenceScreen();
         final PreferenceScreen prefSet = getPreferenceScreen();
 
+        mBlurRadiusPref = (Preference) findPreference(
+                        BLUR_RADIUS_KEY);
+
+        updateAlbumArtPref();
+    }
+
+    private void updateAlbumArtPref() {
+        boolean gradientBlurFilterEnabled = Settings.System.getIntForUser(getActivity().getContentResolver(),
+                Settings.System.LOCKSCREEN_ALBUMART_FILTER, 0, UserHandle.USER_CURRENT) == 5;
+        boolean blurFilterEnabled = Settings.System.getIntForUser(getActivity().getContentResolver(),
+                Settings.System.LOCKSCREEN_ALBUMART_FILTER, 0, UserHandle.USER_CURRENT) >= 3 && !gradientBlurFilterEnabled;
+        mBlurRadiusPref.setEnabled(blurFilterEnabled);
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
