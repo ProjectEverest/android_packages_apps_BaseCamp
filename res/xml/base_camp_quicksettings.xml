@@ -21,6 +21,12 @@
          android:defaultValue="14"
          settings:units="@string/unit_pixels" />
 
+    <com.everest.support.preferences.SystemSettingSwitchPreference
+        android:key="qs_colored_icons"
+        android:title="@string/qs_colored_icons_title"
+        android:summary="@string/qs_colored_icons_summary"
+        android:defaultValue="false"/>
+
     <ListPreference
          android:key="qs_quick_pulldown"
          android:title="@string/qs_quick_pulldown"
