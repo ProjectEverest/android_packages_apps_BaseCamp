@@ -8,6 +8,10 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/basecamp_title" >
 
+        <com.android.settingslib.widget.LayoutPreference
+            android:layout="@layout/everest_dashboard_banner"
+            android:key="everest_banner" />
+
         <!-- Theme Room -->
         <Preference
             android:key="theme_category"
