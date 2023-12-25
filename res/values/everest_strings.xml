@@ -729,4 +729,8 @@
     <string name="status_bar_brightness_control_title">Brightness control</string>
     <string name="status_bar_brightness_control_summary">Adjust brightness by sliding across the status bar</string>
     
+    <!-- Ambient Ticker -->
+    <string name="pulse_on_new_tracks_title">Music ticker</string>
+    <string name="pulse_on_new_tracks_summary">Show music ticker on Ambient Display during track change</string>
+    
 </resources>
