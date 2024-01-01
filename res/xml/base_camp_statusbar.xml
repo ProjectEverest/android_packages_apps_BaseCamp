@@ -56,6 +56,12 @@
             android:defaultValue="true"/>
             
         <com.everest.support.preferences.SystemSettingSwitchPreference
+            android:key="wifi_standard_icon"
+            android:title="@string/show_wifi_standard_icon_title"
+            android:summary="@string/show_wifi_standard_icon_summary"
+            android:defaultValue="false"/>
+            
+        <com.everest.support.preferences.SystemSettingSwitchPreference
             android:key="statusbar_colored_icons"
             android:title="@string/statusbar_colored_icons_title"
             android:summary="@string/statusbar_colored_icons_summary"
