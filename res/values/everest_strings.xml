@@ -870,6 +870,10 @@
     <!-- Navbar options -->
    <string name="navigation_bar_arrow_keys_title">Arrow keys</string>
    <string name="navigation_bar_arrow_keys_summary">Show left &amp; right arrows to control the cursor while typing</string>
+    
+    <!-- Wi-Fi Standard icon -->
+    <string name="show_wifi_standard_icon_title">Show Wi-Fi type icon</string>
+    <string name="show_wifi_standard_icon_summary">Show Wi-Fi type in Wi-Fi signal indicator</string>
 
     <!--3-Finger screenshot-->
     <string name="three_finger_gesture">Three finger gesture</string>
