@@ -16,6 +16,12 @@
             android:title="@string/media_controls_always_show_time_title"
             android:summary="@string/media_controls_always_show_time_summary"
             android:defaultValue="false" />
+
+        <com.everest.support.preferences.SystemPropertySwitchPreference
+            android:key="persist.sys.pixelprops.gphotos"
+            android:title="@string/use_photos_spoof_title"
+            android:summary="@string/use_photos_spoof_summary"
+            android:defaultValue="true" />
     
     </PreferenceCategory>
 
