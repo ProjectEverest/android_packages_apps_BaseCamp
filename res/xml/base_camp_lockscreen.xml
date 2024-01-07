@@ -4,20 +4,33 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <PreferenceScreen
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:title="@string/lockscreen_title"
-    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
-    
-     <PreferenceCategory
-          android:title="@string/lockscreen_clock_title">
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     android:title="@string/lockscreen_title"
+     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-          <com.everest.support.preferences.SecureSettingSwitchPreference
-               android:key="lockscreen_double_line_clock_switch"
-               android:title="@string/lockscreen_double_line_clock_setting_toggle"
-               android:summary="@string/lockscreen_double_line_clock_summary"
-               android:defaultValue="false" />
+     <Preference
+        android:key="lockscreen_preview"
+        settings:layout="@layout/lockscreen_preview" />
+
+     <PreferenceCategory
+        android:title="Custom Lockscreen Clock">
+
+        <com.everest.support.preferences.SystemSettingListPreference
+            android:entries="@array/clock_style_entries"
+            android:title="Custom Clock style"
+            android:key="clock_style"
+            android:defaultValue="0"
+            android:entryValues="@array/clock_style_values" />
+
+        <com.everest.support.preferences.SecureSettingSwitchPreference
+            android:key="lockscreen_double_line_clock_switch"
+            android:title="@string/lockscreen_double_line_clock_setting_toggle"
+            android:summary="@string/lockscreen_double_line_clock_summary"
+            android:defaultValue="false" />
+
      </PreferenceCategory>
-     
+
      <PreferenceCategory
         android:key="ambient_display"
         android:title="@string/ambient_display_category" >
