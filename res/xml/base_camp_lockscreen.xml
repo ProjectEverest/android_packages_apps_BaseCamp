@@ -59,12 +59,6 @@
                android:entryValues="@array/screen_off_animation_values"
                android:defaultValue="0" />
 
-          <com.everest.support.preferences.SystemSettingSwitchPreference
-               android:key="enable_ripple_effect"
-               android:title="@string/enable_fingerprint_ripple_effect_title"
-               android:summary="@string/enable_fingerprint_ripple_effect_summary"
-               android:defaultValue="true" />
-
      </PreferenceCategory>
 
     <!-- lockscreen album art customizations -->
@@ -136,6 +130,12 @@
             android:title="@string/fprint_error_vib_title"
             android:summary="@string/fprint_error_vib_summary"
             android:persistent="true" />
+            
+    <com.everest.support.preferences.SystemSettingSwitchPreference
+            android:key="enable_ripple_effect"
+            android:title="@string/enable_fingerprint_ripple_effect_title"
+            android:summary="@string/enable_fingerprint_ripple_effect_summary"
+            android:defaultValue="true" /> 
 
     </PreferenceCategory>
 </PreferenceScreen>
