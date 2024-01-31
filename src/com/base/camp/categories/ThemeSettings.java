@@ -56,6 +56,7 @@ import android.view.View;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto;
+import com.android.internal.util.everest.EverestUtils;
 import com.android.settings.Utils;
 
 import com.everest.support.colorpicker.ColorPickerPreference;
@@ -67,8 +68,10 @@ import java.util.List;
 public class ThemeSettings extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
     private static final String TAG = "ThemeSettings";
+    private static final String KEY_UDFPS_ANIMATIONS = "udfps_recognizing_animation_preview";
 
     private Context mContext;
+    private Preference mUdfpsAnimations;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -77,6 +80,10 @@ public class ThemeSettings extends SettingsPreferenceFragment implements OnPrefe
         addPreferencesFromResource(R.xml.base_camp_theme);
 
         mContext = getActivity();
+        mUdfpsAnimations = (Preference) findPreference(KEY_UDFPS_ANIMATIONS);
+        if (!EverestUtils.isPackageInstalled(getContext(), "com.everest.udfps.resources")) {
+                getPreferenceScreen().removePreference(mUdfpsAnimations);
+        }       
 
         final ContentResolver resolver = getActivity().getContentResolver();
         final PreferenceScreen screen = getPreferenceScreen();
