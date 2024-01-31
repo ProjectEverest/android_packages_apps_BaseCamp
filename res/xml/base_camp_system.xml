@@ -32,6 +32,18 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+        android:key="navigation"
+        android:title="@string/navigation_bar_category">
+
+    <com.everest.support.preferences.SystemSettingSwitchPreference
+        android:key="pixel_nav_animation"
+        android:title="@string/pixel_navbar_anim_title"
+        android:summary="@string/pixel_navbar_anim_summary"
+        android:defaultValue="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:key="incall_vib_options"
         android:title="@string/incall_vibration_category" >
 
