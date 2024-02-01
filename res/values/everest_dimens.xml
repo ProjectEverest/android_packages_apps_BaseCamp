@@ -4,7 +4,7 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources>
-     <dimen name="everest_radius">28dp</dimen>
+     <dimen name="everest_radius">20dp</dimen>
      <dimen name="everest_radius_merge">5dp</dimen>
      <dimen name="everest_pref_horizontal_padding">16dp</dimen>
      <dimen name="everest_pref_horizontal_padding-negative">-16dp</dimen>
