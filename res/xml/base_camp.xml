@@ -50,7 +50,7 @@
             android:title="@string/gestures_title" 
             android:fragment="com.base.camp.categories.GestureSettings"
             android:summary="@string/gestures_summary"
-            settings:layout="@layout/everest_dashboard_preference_middle"
+            settings:layout="@layout/everest_dashboard_preference_bottom"
             android:icon="@drawable/ic_settings_sos_gestures"/>
 
         <!-- Lock Screen -->
@@ -59,7 +59,7 @@
             android:title="@string/lockscreen_title" 
             android:fragment="com.base.camp.categories.LockScreenSettings"
             android:summary="@string/lockscreen_summary"
-            settings:layout="@layout/everest_dashboard_preference_bottom"
+            settings:layout="@layout/everest_dashboard_preference_top"
             android:icon="@drawable/ic_settings_lockscreens"/>
 
         <!-- Notifications -->
@@ -68,7 +68,7 @@
             android:title="@string/notifications_title"
             android:fragment="com.base.camp.categories.NotificationSettings"
             android:summary="@string/notifications_summary"
-            settings:layout="@layout/everest_dashboard_preference_top"
+            settings:layout="@layout/everest_dashboard_preference_bottom"
             android:icon="@drawable/ic_settings_notifications"/>
 
         <!-- system -->
@@ -77,7 +77,7 @@
             android:title="@string/system_title" 
             android:fragment="com.base.camp.categories.SystemSettings"
             android:summary="@string/system_summary"
-            settings:layout="@layout/everest_dashboard_preference_middle"
+            settings:layout="@layout/everest_dashboard_preference_top"
             android:icon="@drawable/ic_settings_system"/>
         
         <!-- Misc -->
