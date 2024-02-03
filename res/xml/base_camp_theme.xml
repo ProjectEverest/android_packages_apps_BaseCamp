@@ -64,6 +64,12 @@
         android:title="@string/theme_customization_wifi_icon_title"
         android:summary="@string/theme_customization_wifi_icon_summary"
         android:fragment="com.base.camp.fragments.WifiIcons"/>
+
+    <Preference
+        android:key="udfps_settings"
+        android:title="@string/udfps_settings_title"
+        android:summary="@string/udfps_settings_summary"
+        android:fragment="com.base.camp.fragments.lockscreen.UdfpsSettings" />
         
     <!-- Volume Styles -->      
     <com.everest.support.preferences.SystemSettingListPreference
