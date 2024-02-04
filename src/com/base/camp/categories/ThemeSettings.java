@@ -59,6 +59,7 @@ import com.android.internal.logging.nano.MetricsProto;
 import com.android.internal.util.everest.EverestUtils;
 import com.android.settings.Utils;
 
+import com.base.camp.fragments.lockscreen.UdfpsAnimation;
 import com.everest.support.colorpicker.ColorPickerPreference;
 
 import java.util.ArrayList;
@@ -87,6 +88,11 @@ public class ThemeSettings extends SettingsPreferenceFragment implements OnPrefe
 
         final ContentResolver resolver = getActivity().getContentResolver();
         final PreferenceScreen screen = getPreferenceScreen();
+    }
+
+    public static void reset(Context mContext) {
+        ContentResolver resolver = mContext.getContentResolver();
+        UdfpsAnimation.reset(mContext);
     }
 
     @Override
