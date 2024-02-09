@@ -11,6 +11,13 @@
     <PreferenceCategory
     android:title="@string/general_category">
 
+    <Preference
+        android:key="gesture_settings"
+        android:title="@string/aosp_gesture_preference"
+        android:summary="@string/aosp_gesture_summary"
+        android:fragment="com.android.settings.gestures.GestureSettings"
+        settings:controller="com.android.settings.gestures.GesturesSettingPreferenceController"/>
+
     <com.everest.support.preferences.SystemSettingSwitchPreference
         android:key="three_finger_gesture"
         android:title="@string/three_finger_gesture"
