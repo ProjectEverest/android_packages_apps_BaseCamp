@@ -66,6 +66,17 @@
      </PreferenceCategory>
 
      <PreferenceCategory
+        android:key="quick_settings_header_category"
+        android:title="@string/header_category">
+
+        <Preference
+            android:key="category_custom_header"
+            android:fragment="com.base.camp.fragments.QsHeaderImageSettings"
+            android:title="@string/custom_header_title"
+            android:summary="@string/custom_header_summary" />
+     </PreferenceCategory>
+
+     <PreferenceCategory
           android:title="@string/qs_show_brightness_slider_title">
 
           <!-- Brightness slider -->
