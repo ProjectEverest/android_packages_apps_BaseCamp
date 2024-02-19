@@ -1021,4 +1021,8 @@
     <string name="udfps_icon_picker_summary">Choose your favorite fingerprint icon</string>
     <string name="udfps_recog_animation_effect_title">UDFPS custom animation</string>
     <string name="udfps_recog_animation_effect_summary">Choose animation effect</string>
+    
+    <!-- Volume Media Output Toggle -->
+    <string name="volume_media_output_toggle_title">Volume media output</string>
+    <string name="volume_media_output_toggle_summary">Show media output toggle when there is an active stream</string>
 </resources>
