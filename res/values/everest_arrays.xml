@@ -326,6 +326,7 @@
         <item>@string/status_bar_logo_style_blackberry</item>
         <item>@string/status_bar_logo_style_cannabis</item>
         <item>@string/status_bar_logo_style_captain_america</item>
+        <item>@string/status_bar_logo_style_everest</item>
         <item>@string/status_bar_logo_style_fire</item>
         <item>@string/status_bar_logo_style_flash</item>
         <item>@string/status_bar_logo_style_ghost</item>
