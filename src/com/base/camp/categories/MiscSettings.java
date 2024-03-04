@@ -36,25 +36,19 @@ import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.SwitchPreference;
 import android.provider.Settings;
 import com.android.settings.R;
-import com.android.settings.search.BaseSearchIndexProvider;
-import com.android.settingslib.search.SearchIndexable;
 
 import java.util.Arrays;
 import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.List;
 
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.util.everest.systemUtils;
-import com.base.camp.fragments.SmartPixels;
 import com.everest.support.preferences.SystemSettingListPreference;
 
-@SearchIndexable
 public class MiscSettings extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
         
     private static final String SETTINGS_HEADER_IMAGE_RANDOM = "settings_header_image_random";
-    private static final String SMART_PIXELS = "smart_pixels";
     private static final String ABOUT_PHONE_STYLE = "header_style";
     private static final String SETTINGS_DASHBOARD_STYLE = "settings_dashboard_style";
 
@@ -77,16 +71,6 @@ public class MiscSettings extends SettingsPreferenceFragment implements
         mAboutPhoneStyle.setOnPreferenceChangeListener(this);
         mDashBoardStyle = (SystemSettingListPreference) findPreference(SETTINGS_DASHBOARD_STYLE);
         mDashBoardStyle.setOnPreferenceChangeListener(this);
-        mSmartPixels = (Preference) prefScreen.findPreference(SMART_PIXELS);
-        boolean mSmartPixelsSupported = getResources().getBoolean(
-                com.android.internal.R.bool.config_supportSmartPixels);
-        if (!mSmartPixelsSupported)
-            prefScreen.removePreference(mSmartPixels);
-    }
-    
-    public static void reset(Context mContext) {
-        ContentResolver resolver = mContext.getContentResolver();
-        SmartPixels.reset(mContext);
     }
 
     @Override
@@ -110,22 +94,4 @@ public class MiscSettings extends SettingsPreferenceFragment implements
     public int getMetricsCategory() {
         return MetricsProto.MetricsEvent.EVEREST;
     }
-    
-    /**
-     * For search
-     */
-    public static final BaseSearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
-            new BaseSearchIndexProvider(R.xml.base_camp_misc) {
-                @Override
-                public List<String> getNonIndexableKeys(Context context) {
-                    List<String> keys = super.getNonIndexableKeys(context);
-
-                    boolean mSmartPixelsSupported = context.getResources().getBoolean(
-                            com.android.internal.R.bool.config_supportSmartPixels);
-                    if (!mSmartPixelsSupported)
-                        keys.add(SMART_PIXELS);
-
-                    return keys;
-                }
-            };
 }

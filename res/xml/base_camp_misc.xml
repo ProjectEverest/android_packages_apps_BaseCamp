@@ -48,12 +48,6 @@
             android:summary="@string/spoof_storage_encryption_status_summary"
             android:defaultValue="false"/>
 
-        <Preference
-            android:key="smart_pixels"
-            android:title="@string/smart_pixels_title" 
-            android:summary="@string/smart_pixels_summary" 
-            android:fragment="com.base.camp.fragments.SmartPixels" />
-
         <com.everest.support.preferences.SystemPropertySwitchPreference
             android:key="persist.sys.pixelprops.games"
             android:title="@string/games_spoof_title"
