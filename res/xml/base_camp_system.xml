@@ -61,19 +61,10 @@
         android:title="@string/incall_vibration_category" >
 
          <com.everest.support.preferences.SystemSettingSwitchPreference
-            android:key="vibrate_on_connect"
-            android:title="@string/incall_vibrate_connect_title"
-            android:defaultValue="false" />
-
-         <com.everest.support.preferences.SystemSettingSwitchPreference
-            android:key="vibrate_on_callwaiting"
-            android:title="@string/incall_vibrate_call_wait_title"
-            android:defaultValue="false" />
-
-         <com.everest.support.preferences.SystemSettingSwitchPreference
-            android:key="vibrate_on_disconnect"
-            android:title="@string/incall_vibrate_disconnect_title"
-            android:defaultValue="false" />
+            android:key="incall_feeedback_vibrate"
+            android:title="@string/incall_feeedback_vibrate_title"
+            android:defaultValue="false"
+            settings:controller="com.android.settings.sound.IncallFeedbackPreferenceController" />
 
     </PreferenceCategory>
 
